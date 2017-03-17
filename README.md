@@ -13,13 +13,17 @@ npm i -S get-npm-tarball-url
 ## Usage
 
 ```js
-import getNpmTarbalUrl from 'get-npm-tarball-url'
+import getNpmTarballUrl from 'get-npm-tarball-url'
 
-const url = getNpmTarbalUrl('foo', '1.0.0')
+const url = getNpmTarballUrl('foo', '1.0.0')
 
 console.log(url)
 // 'http://registry.npmjs.org/foo/-/foo-1.0.0.tgz'
 ```
+
+## Related
+
+- [parse-npm-tarball-url](https://github.com/pnpm/parse-npm-tarball-url) - Parse a tarball URL hosted in the npm registry
 
 ## License
 
