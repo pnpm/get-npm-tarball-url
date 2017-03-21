@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/tape": "^4.2.29",
     "tape": "^4.6.3",
-    "ts-node": "^2.1.0",
+    "ts-node": "^3.0.1",
     "typescript": "^2.2.1"
   }
 }
