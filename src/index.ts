@@ -4,11 +4,16 @@ export default function (
   opts?: {
     registry?: string
   }): string {
-  const registry = opts && opts.registry || 'http://registry.npmjs.org'
+  const registry = normalizeRegistry(opts && opts.registry || 'http://registry.npmjs.org/')
 
   const encodedName = getEncodedName(pkgName)
   const scopelessName = getScopelessName(pkgName)
-  return `${registry}/${encodedName}/-/${scopelessName}-${pkgVersion}.tgz`
+  return `${registry}${encodedName}/-/${scopelessName}-${pkgVersion}.tgz`
+}
+
+function normalizeRegistry (registry: string) {
+  if (registry[registry.length - 1] === '/') return registry
+  return `${registry}/`
 }
 
 function getEncodedName (name: string) {
