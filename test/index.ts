@@ -12,7 +12,7 @@ test('create simple URL', t => {
 test('create URL of scoped package', t => {
   const url = getNpmTarballUrl('@types/semver', '5.3.31')
 
-  t.equal(url, 'http://registry.npmjs.org/@types%2fsemver/-/semver-5.3.31.tgz')
+  t.equal(url, 'http://registry.npmjs.org/@types/semver/-/semver-5.3.31.tgz')
 
   t.end()
 })
