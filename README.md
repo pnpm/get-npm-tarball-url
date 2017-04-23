@@ -1,5 +1,7 @@
 # get-npm-tarball-url
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pnpm/get-npm-tarball-url.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/pnpm/get-npm-tarball-url.svg?branch=master)](https://travis-ci.org/pnpm/get-npm-tarball-url)
 
 > Create the tarball URL of a npm package
