@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/pnpm/get-npm-tarball-url#readme",
   "devDependencies": {
-    "@types/tape": "^4.2.29",
+    "@types/tape": "^4.2.30",
     "tape": "^4.6.3",
     "ts-node": "^3.0.1",
     "typescript": "^2.2.1"
