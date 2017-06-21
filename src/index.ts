@@ -1,3 +1,5 @@
+import normalizeRegistry = require('normalize-registry-url')
+
 export default function (
   pkgName: string,
   pkgVersion: string,
@@ -8,11 +10,6 @@ export default function (
 
   const scopelessName = getScopelessName(pkgName)
   return `${registry}${pkgName}/-/${scopelessName}-${pkgVersion}.tgz`
-}
-
-function normalizeRegistry (registry: string) {
-  if (registry[registry.length - 1] === '/') return registry
-  return `${registry}/`
 }
 
 function getScopelessName (name: string) {

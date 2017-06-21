@@ -1,4 +1,5 @@
-dependencies: {}
+dependencies:
+  normalize-registry-url: 1.0.0
 devDependencies:
   '@types/tape': 4.2.30
   tape: 4.6.3
@@ -190,6 +191,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+  /normalize-registry-url/1.0.0:
+    resolution:
+      integrity: sha1-910sSDc9p4DHbx8O62OCwG54TRM=
   /object-inspect/1.2.2:
     dev: true
     resolution:
@@ -323,6 +327,7 @@ packages:
 registry: 'https://registry.npmjs.org/'
 specifiers:
   '@types/tape': ^4.2.29
+  normalize-registry-url: ^1.0.0
   tape: ^4.6.3
   ts-node: ^3.0.1
   typescript: ^2.2.1
