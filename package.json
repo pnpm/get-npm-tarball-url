@@ -8,7 +8,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "ts-node test",
+    "test": "ts-node test --type-check",
     "tsc": "tsc",
     "prepublish": "npm test && npm run tsc"
   },
