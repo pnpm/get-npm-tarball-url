@@ -4,7 +4,7 @@ import getNpmTarballUrl from '../src'
 test('create simple URL', t => {
   const url = getNpmTarballUrl('foo', '1.0.0')
 
-  t.equal(url, 'http://registry.npmjs.org/foo/-/foo-1.0.0.tgz')
+  t.equal(url, 'https://registry.npmjs.org/foo/-/foo-1.0.0.tgz')
 
   t.end()
 })
@@ -12,7 +12,7 @@ test('create simple URL', t => {
 test('create URL of scoped package', t => {
   const url = getNpmTarballUrl('@types/semver', '5.3.31')
 
-  t.equal(url, 'http://registry.npmjs.org/@types/semver/-/semver-5.3.31.tgz')
+  t.equal(url, 'https://registry.npmjs.org/@types/semver/-/semver-5.3.31.tgz')
 
   t.end()
 })

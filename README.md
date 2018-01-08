@@ -18,7 +18,7 @@ import getNpmTarballUrl from 'get-npm-tarball-url'
 const url = getNpmTarballUrl('foo', '1.0.0')
 
 console.log(url)
-// 'http://registry.npmjs.org/foo/-/foo-1.0.0.tgz'
+// 'https://registry.npmjs.org/foo/-/foo-1.0.0.tgz'
 ```
 
 ## Related

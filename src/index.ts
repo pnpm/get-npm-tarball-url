@@ -6,7 +6,7 @@ export default function (
   opts?: {
     registry?: string
   }): string {
-  const registry = normalizeRegistry(opts && opts.registry || 'http://registry.npmjs.org/')
+  const registry = normalizeRegistry(opts && opts.registry || 'https://registry.npmjs.org/')
 
   const scopelessName = getScopelessName(pkgName)
   return `${registry}${pkgName}/-/${scopelessName}-${pkgVersion}.tgz`
