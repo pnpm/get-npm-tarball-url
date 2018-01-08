@@ -16,12 +16,19 @@
     "type": "git",
     "url": "git+https://github.com/pnpm/get-npm-tarball-url.git"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "keywords": [
     "npm",
     "url",
     "tarball"
   ],
-  "author": "Zoltan Kochan",
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "z@kochan.io",
+    "url": "https://www.kochan.io/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pnpm/get-npm-tarball-url/issues"
