@@ -8,9 +8,9 @@
     "lib"
   ],
   "scripts": {
-    "test": "ts-node test --type-check",
+    "test": "preview && ts-node test --type-check",
     "tsc": "tsc",
-    "prepublish": "npm test && npm run tsc"
+    "prepublishOnly": "npm run tsc"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
   "homepage": "https://github.com/pnpm/get-npm-tarball-url#readme",
   "devDependencies": {
     "@types/tape": "^4.2.29",
+    "package-preview": "^1.0.3",
     "tape": "^4.6.3",
     "ts-node": "^4.0.0",
     "typescript": "^2.4.2"

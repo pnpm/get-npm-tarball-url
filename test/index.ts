@@ -1,5 +1,5 @@
 import test = require('tape')
-import getNpmTarballUrl from '../src'
+import getNpmTarballUrl from 'get-npm-tarball-url'
 
 test('create simple URL', t => {
   const url = getNpmTarballUrl('foo', '1.0.0')
