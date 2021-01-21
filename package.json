@@ -1,6 +1,6 @@
 {
   "name": "get-npm-tarball-url",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Create the tarball URL of a npm package",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
