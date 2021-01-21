@@ -7,7 +7,7 @@
 ## Installation
 
 ```
-npm i -S get-npm-tarball-url
+pnpm add get-npm-tarball-url
 ```
 
 ## Usage

@@ -32,3 +32,11 @@ test('create URL of with custom registry package with slash at the end', t => {
 
   t.end()
 })
+
+test('ignore the build metadata in the version', t => {
+  const url = getNpmTarballUrl('foo', '1.0.0+abc')
+
+  t.equal(url, 'https://registry.npmjs.org/foo/-/foo-1.0.0.tgz')
+
+  t.end()
+})
