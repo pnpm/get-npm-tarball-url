@@ -1,4 +1,4 @@
-import normalizeRegistry = require('normalize-registry-url')
+import normalizeRegistry from 'normalize-registry-url'
 
 export default function (
   pkgName: string,

@@ -9,9 +9,9 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": true,
-    "target": "es6",
+    "target": "es2019",
     "outDir": "lib",
-    "module": "commonjs",
+    "module": "ES2020",
     "moduleResolution": "node"
   },
   "filesGlob": [
