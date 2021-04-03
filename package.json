@@ -17,7 +17,7 @@
     "url": "git+https://github.com/pnpm/get-npm-tarball-url.git"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=12.17"
   },
   "keywords": [
     "npm",
