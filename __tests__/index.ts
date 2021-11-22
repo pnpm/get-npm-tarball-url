@@ -29,3 +29,9 @@ test('ignore the build metadata in the version', () => {
 
   expect(url).toBe('https://registry.npmjs.org/foo/-/foo-1.0.0.tgz')
 })
+
+test('create URL with custom registry package', () => {
+  const url = getNpmTarballUrl('foo', '1.0.0', { registry: 'https://npm.pkg.github.com/owner'})
+
+  expect(url).toBe('https://npm.pkg.github.com/owner/foo/-/foo-1.0.0.tgz')
+})

@@ -1,12 +1,15 @@
-import normalizeRegistry = require('normalize-registry-url')
-
 export default function (
   pkgName: string,
   pkgVersion: string,
   opts?: {
     registry?: string
   }): string {
-  const registry = normalizeRegistry(opts && opts.registry || 'https://registry.npmjs.org/')
+  let registry!: string
+  if (opts?.registry) {
+    registry = opts.registry.endsWith('/') ? opts.registry : `${opts.registry}/`
+  } else {
+    registry = 'https://registry.npmjs.org/'
+  }
 
   const scopelessName = getScopelessName(pkgName)
   return `${registry}${pkgName}/-/${scopelessName}-${removeBuildMetadataFromVersion(pkgVersion)}.tgz`
