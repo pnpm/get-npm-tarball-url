@@ -2,15 +2,31 @@
   "name": "get-npm-tarball-url",
   "version": "2.0.3",
   "description": "Create the tarball URL of a npm package",
+  "packageManager": "pnpm@8.10.2",
+  "type": "commonjs",
   "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      }
+    }
+  },
   "files": [
     "lib"
   ],
   "scripts": {
     "test": "jest",
     "tsc": "tsc",
-    "prepublishOnly": "pnpm tsc"
+    "build": "tsup",
+    "prepublishOnly": "pnpm build"
   },
   "repository": {
     "type": "git",
@@ -39,6 +55,7 @@
     "jest": "^27.3.1",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
+    "tsup": "^7.2.0",
     "typescript": "^4.5.2"
   }
 }
