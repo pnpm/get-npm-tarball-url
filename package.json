@@ -1,6 +1,6 @@
 {
   "name": "get-npm-tarball-url",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Create the tarball URL of a npm package",
   "packageManager": "pnpm@8.10.2",
   "type": "commonjs",
